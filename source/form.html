@@ -37,14 +37,14 @@
         <h1 class="program__title">Подбор программы</h1>
         <p class="program__lead">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <form class="program__form form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="form__group">
-            <legend class="visually-hidden form__group-title">Данные о коте</legend>
+          <fieldset class="form__fieldset">
+            <legend class="visually-hidden form__legend">Данные о коте</legend>
             <label class="form__label" for="cat-name">Имя:*</label>
-            <input class="form__input" type="text" id="cat-name" name="cat-name" value="Барсик" required>
+            <input class="form__input" type="text" id="cat-name" name="cat-name" placeholder="Барсик" required>
             <label class="form__label" for="cat-weight">Вес (кг):*</label>
-            <input class="form__input" type="number" id="cat-weight" name="cat-weight" value="7" required>
+            <input class="form__input" type="number" id="cat-weight" name="cat-weight" placeholder="7" required>
             <label class="form__label" for="cat-age">Возраст</label>
-            <input class="form__input" type="number" id="cat-age" name="cat-age" value="7">
+            <input class="form__input" type="number" id="cat-age" name="cat-age" placeholder="7">
             <ul class="form__control-list">
               <li class="form__control-item">
                 <label class="form__control control-radio">
@@ -70,22 +70,22 @@
             </ul>
           </fieldset>
 
-          <fieldset class="form__group">
-            <legend class="form__group-title">Контактные данные (владельца кота)</legend>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Контактные данные (владельца кота)</legend>
             <label class="form__label" for="email">E-mail:*</label>
-            <input class="form__input" type="email" id="email" name="email" value="kuklachev@gmail.com" required>
+            <input class="form__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
             <label class="form__label" for="tel">Телефон:*</label>
-            <input class="form__input" type="tel" id="tel" name="tel" value="8 (960) 900-60-90" required>
+            <input class="form__input" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
           </fieldset>
 
-          <fieldset class="form__group">
-            <legend class="form__group-title">Комментарий</legend>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Комментарий</legend>
             <textarea class="form__input" name="comment" id="comment" cols="30" rows="10"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
-          <fieldset class="form__group">
-            <legend class="form__group-title">Дополнительно</legend>
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Дополнительно</legend>
             <ul class="form__control-list">
               <li class="form__control-item">
                 <label class="form__control control-checkbox">
