@@ -326,7 +326,7 @@
 
 .catalog-more__promo {
   color: #ffffff;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/background-promo.jpg");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/background-promo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   font-size: 16px;
