@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -14,6 +15,7 @@
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню.</span>
+        <span clas="test"></span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list navigation-list">
@@ -89,11 +91,11 @@
           по-прежнему спит по 16 часов в день.</p>
         <dl class="weight-loss-example__list">
           <div class="weight-loss-example__item">
-            <dt class="weight-loss-example__description">Снижение веса</dt>
+            <dt class="weight-loss-example__definition">Снижение веса</dt>
             <dd class="weight-loss-example__value">5 кг</dd>
           </div>
           <div class="weight-loss-example__item">
-            <dt class="weight-loss-example__description">Затрачено времени</dt>
+            <dt class="weight-loss-example__definition">Затрачено времени</dt>
             <dd class="weight-loss-example__value">60 дней</dd>
           </div>
         </dl>
@@ -117,7 +119,7 @@
   </main>
 
   <footer class="footer">
-    <section class="footer__contacts contacts">
+    <section class="footer__contacts contacts contacts--index">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="contacts__wrapper">
         <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
@@ -134,13 +136,19 @@
       <h2 class="visually-hidden">Наши соцсети</h2>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--vk" href="#">Вконтакте</a>
+          <a class="social__link social__link--vk" href="#">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">Ютуб</a>
+          <a class="social__link social__link--youtube" href="#">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="#">Телеграм</a>
+          <a class="social__link social__link--telegram" href="#">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
         </li>
       </ul>
     </section>
