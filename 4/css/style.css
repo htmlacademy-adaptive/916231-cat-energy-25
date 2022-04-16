@@ -42,7 +42,7 @@
 }
 
 .intro {
-  background-image: url("../../img/background-intro.jpg");
+  background-image: url("../img/background-intro.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
@@ -126,7 +126,7 @@
   content: "";
   width: 24px;
   height: 12px;
-  background-image: url("../../img/arrow.svg");
+  background-image: url("../img/arrow.svg");
   background-repeat: no-repeat;
   position: absolute;
   right: 0;
@@ -264,13 +264,13 @@
   height: 30px;
 }
 .social__link--vk {
-  background-image: url("../../img/icon-vk.svg");
+  background-image: url("../img/icon-vk.svg");
 }
 .social__link--youtube {
-  background-image: url("../../img/icon-youtube.svg");
+  background-image: url("../img/icon-youtube.svg");
 }
 .social__link--telegram {
-  background-image: url("../../img/icon-telegram.svg");
+  background-image: url("../img/icon-telegram.svg");
 }
 
 .copyright__text {
