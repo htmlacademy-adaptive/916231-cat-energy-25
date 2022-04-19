@@ -1,28 +1,32 @@
 .form__fieldset {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.1;
-  color: #000000;
+  color: $color-black;
 }
 
 .form__label {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.1;
   text-transform: uppercase;
-  color: #444444;
+  color: $color-tundora;
 }
 
 .form__input {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.1;
   text-transform: uppercase;
-  border: 1px solid #e7e7e7;
+  border: 1px solid $color-mercury;
   padding: 13px;
+
+  &::placeholder {
+    color: $color-tundora;
+  }
 }
 
 .form__control-list {
@@ -31,5 +35,5 @@
 }
 
 .form__footnote {
-  color: #000000;
+  color: $color-black;
 }

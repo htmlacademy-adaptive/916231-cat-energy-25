@@ -1,52 +1,25 @@
-@import "./blocks/page.scss";
-@import "./blocks/main-container.scss";
-@import "./blocks/navigation-list.scss";
-@import "./blocks/intro.scss";
-@import "./blocks/button.scss";
-@import "./blocks/programs.scss";
-@import "./blocks/program.scss";
-@import "./blocks/principle-operation.scss";
-@import "./blocks/weight-loss-example.scss";
-@import "./blocks/footer.scss";
-@import "./blocks/contacts.scss";
-@import "./blocks/social.scss";
-@import "./blocks/copyright.scss";
-@import "./blocks/catalog.scss";
-@import "./blocks/card.scss";
-@import "./blocks/catalog-more.scss";
-@import "./blocks/more-card.scss";
-@import "./blocks/select-program.scss";
-@import "./blocks/form.scss";
-@import "./blocks/control-radio.scss";
-@import "./blocks/control-checkbox.scss";
-
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/oswaldmedium.woff2") format("woff2");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/oswaldregular.woff2") format("woff2");
-  font-display: swap;
-}
-
-img {
-  display: block;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+@import "fonts.scss";
+@import "global.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "blocks/page.scss";
+@import "blocks/main-container.scss";
+@import "blocks/navigation-list.scss";
+@import "blocks/intro.scss";
+@import "blocks/button.scss";
+@import "blocks/programs.scss";
+@import "blocks/program.scss";
+@import "blocks/principle-operation.scss";
+@import "blocks/weight-loss-example.scss";
+@import "blocks/footer.scss";
+@import "blocks/contacts.scss";
+@import "blocks/social.scss";
+@import "blocks/copyright.scss";
+@import "blocks/catalog.scss";
+@import "blocks/card.scss";
+@import "blocks/catalog-more.scss";
+@import "blocks/more-card.scss";
+@import "blocks/select-program.scss";
+@import "blocks/form.scss";
+@import "blocks/control-radio.scss";
+@import "blocks/control-checkbox.scss";

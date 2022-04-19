@@ -1,19 +1,17 @@
 .footer {
-  background-color: #f2f2f2;
+  background-color: $color-concrete;
 }
 
 .footer__social {
-  margin-right: 20px;
-  margin-left: 20px;
+  @include side-margin;
 }
 
 .footer__copyright {
-  margin-right: 20px;
-  margin-left: 20px;
+  @include side-margin;
 }
 
 .footer__logo {
   display: block;
-  margin-right: 20px;
-  margin-left: 20px;
+
+  @include side-margin;
 }
