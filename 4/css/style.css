@@ -1,3 +1,32 @@
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/oswaldmedium.woff2") format("woff2");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+}
+img {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page__body {
   font-family: "Arial", sans-serif;
   color: #444444;
@@ -10,13 +39,13 @@
 
 .main-container__title {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 1;
   margin-top: 27px;
-  margin-right: 20px;
   margin-bottom: 40px;
+  margin-right: 20px;
   margin-left: 20px;
 }
 
@@ -33,7 +62,7 @@
 
 .navigation-list__link {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
@@ -52,7 +81,7 @@
 
 .intro__title {
   color: #ffffff;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 1;
@@ -61,7 +90,7 @@
 
 .intro__text {
   color: #ffffff;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1;
@@ -76,7 +105,7 @@
 .button {
   display: block;
   color: #ffffff;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
@@ -101,7 +130,7 @@
 
 .program__title {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.5;
@@ -111,7 +140,7 @@
 
 .program__link {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
@@ -137,13 +166,13 @@
 }
 
 .principle-operation__wrapper {
-  margin-left: 20px;
   margin-right: 20px;
+  margin-left: 20px;
 }
 
 .principle-operation__title {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.1;
@@ -160,13 +189,13 @@
 
 .weight-loss-example__wrapper {
   padding-top: 25px;
-  margin-left: 20px;
   margin-right: 20px;
+  margin-left: 20px;
 }
 
 .weight-loss-example__title {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.1;
@@ -181,7 +210,7 @@
 
 .weight-loss-example__value {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
@@ -191,7 +220,7 @@
 
 .weight-loss-example__price {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.4;
@@ -200,7 +229,7 @@
 
 .weight-loss-example__toggle-button {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
@@ -236,13 +265,13 @@
 }
 
 .contacts__wrapper {
-  margin-left: 20px;
   margin-right: 20px;
+  margin-left: 20px;
 }
 
 .contacts__title {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -294,7 +323,7 @@
 
 .card__title {
   color: #222222;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   text-transform: uppercase;
@@ -312,7 +341,7 @@
 
 .catalog-more__title {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1;
@@ -339,7 +368,7 @@
 
 .more-card__title {
   color: #222222;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
@@ -357,7 +386,7 @@
 
 .select-program__title {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 1;
@@ -366,14 +395,14 @@
 
 .select-program__lead {
   color: #000000;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
 }
 
 .form__fieldset {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.1;
@@ -381,7 +410,7 @@
 }
 
 .form__label {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.1;
@@ -390,13 +419,16 @@
 }
 
 .form__input {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.1;
   text-transform: uppercase;
   border: 1px solid #e7e7e7;
   padding: 13px;
+}
+.form__input::placeholder {
+  color: #444444;
 }
 
 .form__control-list {
@@ -409,7 +441,7 @@
 }
 
 .control-radio__label {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.1;
@@ -418,40 +450,11 @@
 }
 
 .control-checkbox__label {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.1;
   text-transform: uppercase;
   color: #000000;
-}
-
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/oswaldmedium.woff2") format("woff2");
-  font-display: swap;
-}
-@font-face {
-  font-family: "Oswald";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/oswaldregular.woff2") format("woff2");
-  font-display: swap;
-}
-img {
-  display: block;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */
