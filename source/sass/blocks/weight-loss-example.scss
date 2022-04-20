@@ -1,0 +1,53 @@
+.weight-loss-example {
+  background-color: $color-gallery;
+}
+
+.weight-loss-example__wrapper {
+  padding-top: 25px;
+
+  @include side-margin;
+}
+
+.weight-loss-example__title {
+  color: $color-black;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.weight-loss-example__definition {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.weight-loss-example__value {
+  color: $color-black;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-left: 0;
+}
+
+.weight-loss-example__price {
+  color: $color-black;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.weight-loss-example__toggle-button {
+  color: $color-black;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: none;
+  background-color: transparent;
+}

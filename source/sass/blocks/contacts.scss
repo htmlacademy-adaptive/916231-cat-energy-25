@@ -1,0 +1,20 @@
+.contacts {
+  background-color: $color-concrete;
+
+  &--index {
+    background-color: $color-white;
+  }
+}
+
+.contacts__wrapper {
+  @include side-margin;
+}
+
+.contacts__title {
+  color: $color-black;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}

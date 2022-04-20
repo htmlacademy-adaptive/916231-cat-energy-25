@@ -1,0 +1,8 @@
+.catalog__wrapper {
+  @include side-margin;
+}
+
+.catalog__list {
+  list-style-type: none;
+  padding-left: 0;
+}

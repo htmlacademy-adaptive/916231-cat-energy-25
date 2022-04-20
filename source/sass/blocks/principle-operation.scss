@@ -1,0 +1,20 @@
+.principle-operation {
+  margin-bottom: 50px;
+}
+
+.principle-operation__wrapper {
+  @include side-margin;
+}
+
+.principle-operation__title {
+  color: $color-black;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.1;
+}
+
+.principle-operation__list {
+  list-style-type: none;
+  padding-left: 0;
+}

@@ -1,0 +1,26 @@
+.social__list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.social__link {
+  display: block;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+
+  &--vk {
+    background-image: url("../img/icon-vk.svg");
+  }
+
+  &--youtube {
+    background-image: url("../img/icon-youtube.svg");
+  }
+
+  &--telegram {
+    background-image: url("../img/icon-telegram.svg");
+  }
+}

@@ -1,0 +1,39 @@
+.program {
+  background-color: $color-concrete;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.program__title {
+  color: $color-black;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.program__link {
+  color: $color-black;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-top: 8px;
+  padding-right: 40px;
+  padding-bottom: 8px;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 24px;
+    height: 12px;
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+  }
+}

@@ -1,0 +1,30 @@
+.catalog-more__wrapper {
+  @include side-margin;
+}
+
+.catalog-more__title {
+  color: $color-black;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1;
+  margin-top: 0;
+}
+
+.catalog-more__list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.catalog-more__promo {
+  color: $color-white;
+  background-image: linear-gradient(
+      rgba($color-apple, 0.85),
+      rgba($color-apple, 0.85)
+    ),
+    url("../img/background-promo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 16px;
+  text-align: center;
+}

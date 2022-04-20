@@ -1,0 +1,11 @@
+.main-container__title {
+  color: $color-black;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1;
+  margin-top: 27px;
+  margin-bottom: 40px;
+
+  @include side-margin;
+}

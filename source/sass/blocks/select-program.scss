@@ -1,0 +1,20 @@
+.select-program__wrapper {
+  @include side-margin;
+}
+
+.select-program__title {
+  color: $color-black;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1;
+  margin-top: 0;
+}
+
+.select-program__lead {
+  color: $color-black;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+}

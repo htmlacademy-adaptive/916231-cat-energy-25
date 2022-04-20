@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8">
   <title>Подбор программы</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page__body">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-image" src="img/logo.svg" width="191" height="38" alt="Логотип сайта.">
@@ -32,11 +33,11 @@
   </header>
 
   <main class="main-container">
-    <section class="program">
-      <div class="program__wrapper">
-        <h1 class="program__title">Подбор программы</h1>
-        <p class="program__lead">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-        <form class="program__form form" action="https://echo.htmlacademy.ru/" method="post">
+    <section class="select-program">
+      <div class="select-program__wrapper">
+        <h1 class="select-program__title">Подбор программы</h1>
+        <p class="select-program__lead">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <form class="select-program__form form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="form__fieldset">
             <legend class="visually-hidden form__legend">Данные о коте</legend>
             <label class="form__label" for="cat-name">Имя:*</label>
@@ -142,13 +143,19 @@
       <h2 class="visually-hidden">Наши соцсети</h2>
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--vk" href="#">Вконтакте</a>
+          <a class="social__link social__link--vk" href="#">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="#">Ютуб</a>
+          <a class="social__link social__link--youtube" href="#">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--telegram" href="#">Телеграм</a>
+          <a class="social__link social__link--telegram" href="#">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
         </li>
       </ul>
     </section>

@@ -1,0 +1,17 @@
+.footer {
+  background-color: $color-concrete;
+}
+
+.footer__social {
+  @include side-margin;
+}
+
+.footer__copyright {
+  @include side-margin;
+}
+
+.footer__logo {
+  display: block;
+
+  @include side-margin;
+}
