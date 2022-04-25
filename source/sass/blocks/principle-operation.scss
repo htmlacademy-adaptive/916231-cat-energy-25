@@ -4,6 +4,15 @@
 
 .principle-operation__wrapper {
   @include side-margin;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .principle-operation__title {
@@ -17,4 +26,17 @@
 .principle-operation__list {
   list-style-type: none;
   padding-left: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 150px;
+    row-gap: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 94px;
+  }
 }

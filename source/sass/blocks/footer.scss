@@ -2,16 +2,32 @@
   background-color: $color-concrete;
 }
 
-.footer__social {
-  @include side-margin;
-}
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
 
-.footer__copyright {
-  @include side-margin;
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .footer__logo {
   display: block;
 
+  @include side-margin;
+}
+
+.footer__social {
+  @include side-margin;
+}
+
+.footer__copyright {
   @include side-margin;
 }

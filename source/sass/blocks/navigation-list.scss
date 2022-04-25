@@ -2,11 +2,23 @@
   list-style-type: none;
   margin: 0;
   padding-left: 0;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .navigation-list__item {
-  padding: 22px;
+  padding-top: 22px;
+  padding-bottom: 22px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+  }
 }
 
 .navigation-list__link {

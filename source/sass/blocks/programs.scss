@@ -1,6 +1,26 @@
+.programs {
+  margin: 0 auto;
+}
+
 .programs__list {
   padding: 0;
   list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 
   @include side-margin;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 80px;
+    width: 1220px;
+  }
 }
