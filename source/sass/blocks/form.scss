@@ -4,6 +4,25 @@
   font-size: 24px;
   line-height: 1.1;
   color: $color-black;
+
+  &--cat-data {
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+.form__input-list {
+  list-style-type: none;
+  padding-left: 0;
+
+  &--owner-data {
+    @media (min-width: $desktop-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 }
 
 .form__label {
@@ -32,6 +51,18 @@
 .form__control-list {
   list-style-type: none;
   padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  &--more {
+    @media (min-width: $tablet-width) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
 }
 
 .form__footnote {
