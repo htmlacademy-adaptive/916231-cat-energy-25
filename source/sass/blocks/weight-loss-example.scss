@@ -4,8 +4,36 @@
 
 .weight-loss-example__wrapper {
   padding-top: 25px;
+  display: grid;
+  grid-template-areas:
+    "title"
+    "description"
+    "list"
+    "price"
+    "image"
+    "toggle";
 
   @include side-margin;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+    grid-template-areas:
+      "title title"
+      "description description"
+      "list price"
+      "image image"
+      "toggle toggle";
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    grid-template-areas:
+      "title image"
+      "description image"
+      "list image"
+      "price toggle";
+  }
 }
 
 .weight-loss-example__title {
@@ -16,6 +44,15 @@
   line-height: 1.1;
   margin-top: 0;
   margin-bottom: 40px;
+  grid-area: title;
+}
+
+.weight-loss-example__description {
+  grid-area: description;
+}
+
+.weight-loss-example__list {
+  grid-area: list;
 }
 
 .weight-loss-example__definition {
@@ -40,6 +77,15 @@
   font-size: 14px;
   line-height: 1.4;
   text-transform: uppercase;
+  grid-area: price;
+}
+
+.weight-loss-example__photo {
+  grid-area: image;
+}
+
+.weight-loss-example__toggle {
+  grid-area: toggle;
 }
 
 .weight-loss-example__toggle-button {
