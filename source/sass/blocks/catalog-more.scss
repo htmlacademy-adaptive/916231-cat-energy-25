@@ -1,5 +1,16 @@
 .catalog-more__wrapper {
   @include side-margin;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .catalog-more__title {
@@ -9,11 +20,24 @@
   font-size: 24px;
   line-height: 1;
   margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
 }
 
 .catalog-more__list {
   list-style-type: none;
   padding-left: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 896px;
+  }
 }
 
 .catalog-more__promo {
@@ -25,6 +49,11 @@
     url("../img/background-promo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   font-size: 16px;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
