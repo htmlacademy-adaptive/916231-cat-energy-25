@@ -1,6 +1,16 @@
 .program {
   background-color: $color-concrete;
   padding: 20px;
+  padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 52px;
+    padding-top: 77px;
+  }
 }
 
 .program__title {
@@ -11,9 +21,24 @@
   line-height: 1.5;
   text-transform: uppercase;
   margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 1;
+  }
+}
+
+.program__description {
+  padding-bottom: 23px;
+  border-bottom: 1px solid $color-alto;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 0;
+  }
 }
 
 .program__link {
+  display: inline-block;
   color: $color-black;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -21,7 +46,7 @@
   line-height: 1;
   text-transform: uppercase;
   text-decoration: none;
-  padding-top: 8px;
+  padding-top: 15px;
   padding-right: 40px;
   padding-bottom: 8px;
   position: relative;
@@ -33,6 +58,16 @@
     background-image: url("../img/arrow.svg");
     background-repeat: no-repeat;
     position: absolute;
+    top: 24px;
     right: 0;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 1.5;
   }
 }

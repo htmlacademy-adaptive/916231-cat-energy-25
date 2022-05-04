@@ -1,18 +1,6 @@
 .principle-operation {
   padding-bottom: 50px;
-}
-
-.principle-operation__wrapper {
-  @include side-margin;
-
-  @media (min-width: $tablet-width) {
-    width: 708px;
-    margin: 0 auto;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1220px;
-  }
+  counter-reset: count;
 }
 
 .principle-operation__title {
@@ -21,6 +9,12 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 1.1;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 1;
+  }
 }
 
 .principle-operation__list {
@@ -38,5 +32,26 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 94px;
+  }
+}
+
+.principle-operation__item {
+  counter-increment: count;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-height: 280px;
+
+    &::after {
+      content: counter(count);
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 280px;
+      line-height: 1;
+      color: $color-concrete;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
   }
 }
