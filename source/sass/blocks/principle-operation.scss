@@ -38,9 +38,46 @@
 .principle-operation__item {
   counter-increment: count;
   position: relative;
+  padding-left: 80px;
+  min-height: 60px;
+
+  &::before {
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: center;
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+  }
+
+  &--leaf::before {
+    background-image: url("../img/icon-leaf.svg");
+  }
+
+  &--tub::before {
+    background-image: url("../img/icon-tub.svg");
+  }
+
+  &--eat::before {
+    background-image: url("../img/icon-eat.svg");
+  }
+
+  &--alarm::before {
+    background-image: url("../img/icon-alarm.svg");
+  }
 
   @media (min-width: $tablet-width) {
     min-height: 280px;
+    padding-left: 0;
+    padding-top: 120px;
+
+    &::before {
+      top: 20px;
+      width: 80px;
+      height: 80px;
+    }
 
     &::after {
       content: counter(count);

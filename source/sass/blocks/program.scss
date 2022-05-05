@@ -2,14 +2,71 @@
   background-color: $color-concrete;
   padding: 20px;
   padding-top: 30px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+  }
+
+  &--weight-loss::before {
+    background-image: url("../img/cat-slim.svg");
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 53px;
+  }
+
+  &--weight-gain::before {
+    background-image: url("../img/cat-pro.svg");
+    background-repeat: no-repeat;
+    width: 67px;
+    height: 50px;
+    left: 12px;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 77px;
+    padding-right: 324px;
+    padding-bottom: 57px;
+    padding-left: 52px;
+
+    &--weight-loss::before {
+      width: 200px;
+      height: 211px;
+      background-size: 200px 211px;
+      top: 80px;
+      right: 62px;
+    }
+
+    &--weight-gain::before {
+      width: 268px;
+      height: 200px;
+      background-size: 268px 200px;
+      top: 91px;
+      right: 28px;
+      left: auto;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 52px;
-    padding-top: 77px;
+    padding-right: 51px;
+
+    &--weight-loss::before {
+      width: 100px;
+      height: 106px;
+      background-size: 100px 106px;
+      top: 41px;
+      left: 52px;
+    }
+
+    &--weight-gain::before {
+      width: 134px;
+      height: 100px;
+      background-size: 134px 100px;
+      top: 47px;
+      left: 33px;
+    }
   }
 }
 
@@ -20,11 +77,20 @@
   font-size: 24px;
   line-height: 1.5;
   text-transform: uppercase;
+  padding-left: 80px;
   margin-top: 0;
+  margin-bottom: 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 1;
+    padding-left: 0;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 162px;
+    margin-bottom: 73px;
   }
 }
 
