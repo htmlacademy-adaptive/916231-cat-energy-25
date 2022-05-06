@@ -1,4 +1,22 @@
+.copyright {
+  &:hover .copyright__link {
+    color: $color-apple;
+  }
+
+  &:active .copyright__link {
+    color: rgba($color-apple, 0.3);
+  }
+
+  &:active .copyright__text {
+    color: rgba($color-tundora, 0.3);
+  }
+}
+
 .copyright__text {
   font-size: 16px;
   line-height: 1.1;
+}
+
+.copyright__link {
+  color: $color-dove-gray;
 }
