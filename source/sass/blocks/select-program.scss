@@ -1,16 +1,32 @@
 .select-program__title {
   color: $color-black;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-primary;
   font-weight: 400;
   font-size: 36px;
   line-height: 1;
-  margin-top: 0;
+  margin-top: 27px;
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
+  }
 }
 
 .select-program__lead {
   color: $color-black;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-primary;
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-bottom: 66px;
+  }
 }
