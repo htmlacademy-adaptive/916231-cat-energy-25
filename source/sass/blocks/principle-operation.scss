@@ -5,7 +5,7 @@
 
 .principle-operation__title {
   color: $color-black;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-primary;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.1;
@@ -81,7 +81,7 @@
 
     &::after {
       content: counter(count);
-      font-family: "Oswald", "Arial", sans-serif;
+      font-family: $font-primary;
       font-size: 280px;
       line-height: 1;
       color: $color-concrete;

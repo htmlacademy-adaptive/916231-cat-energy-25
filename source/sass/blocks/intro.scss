@@ -15,7 +15,7 @@
     content: "";
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     &::after {
       background-image: none;
     }
@@ -25,6 +25,7 @@
     position: static;
 
     &::after {
+      background-image: url("../img/background-intro.jpg");
       background-size: 50%;
       background-position: top right;
     }
@@ -33,7 +34,7 @@
 
 .intro__title {
   color: $color-white;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-primary;
   font-weight: 400;
   font-size: 36px;
   line-height: 1;
@@ -50,7 +51,7 @@
 
 .intro__text {
   color: $color-white;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-primary;
   font-weight: 400;
   font-size: 14px;
   line-height: 1;

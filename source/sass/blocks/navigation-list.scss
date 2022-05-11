@@ -16,12 +16,21 @@
   text-align: center;
   border-top: 1px solid $color-mercury;
 
+  &:last-child {
+    border-bottom: 1px solid $color-mercury;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 0;
-    border-top: none;
     margin-left: 36px;
+    border-top: none;
 
-    &--active {
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &--active,
+    &--active:last-child {
       border-bottom: 2px solid $color-apple;
     }
   }
@@ -29,7 +38,7 @@
 
 .navigation-list__link {
   color: $color-black;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-primary;
   font-weight: 500;
   font-size: 20px;
   line-height: 1;

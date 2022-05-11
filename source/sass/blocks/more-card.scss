@@ -1,16 +1,70 @@
+.more-card {
+  padding-top: 13px;
+  padding-bottom: 19px;
+  border-top: 1px solid $color-silver;
+
+  &:last-child {
+    border-bottom: 1px solid $color-silver;
+  }
+
+  display: grid;
+  grid-template-areas: "title" "feature" "button";
+  gap: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px;
+    border-left: 1px solid $color-silver;
+    border-right: 1px solid $color-silver;
+    grid-template-areas:
+      "title feature"
+      "button button";
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+    border-left: none;
+    border-right: none;
+    grid-template-areas: "title feature button";
+    grid-template-columns: 1fr 1fr 300px;
+  }
+}
+
 .more-card__link {
   text-decoration: none;
+  grid-area: title;
 }
 
 .more-card__title {
   color: $color-mine-shaft;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-primary;
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
   text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.more-card__features-list {
+  grid-area: feature;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.more-card__features-value {
+  margin: 0;
 }
 
 .more-card__shopping-link {
   text-decoration: none;
+  grid-area: button;
 }
