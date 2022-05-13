@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -38,7 +40,12 @@
       <div class="wrapper wrapper--intro">
         <h2 class="intro__title">Функциональное питание для котов</h2>
         <p class="intro__text">Занялся собой? Займись котом!</p>
-        <img class="intro__image-product" src="img/product.png" alt="Банка Кэт энерджи про.">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/product-desktop.png 1x, img/product-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/product-tablet.png 1x, img/product-tablet@2x.png 2x">
+          <img class="intro__image-product" src="img/product-phone.png" srcset="img/product-phone@2x.png 2x" width="280"
+            height="270" alt="Банка Кэт энерджи про.">
+        </picture>
         <a class="intro__link button" href="form.html">Подобрать программу</a>
       </div>
     </section>
@@ -104,8 +111,23 @@
           <span class="weight-loss-example__price-description">Затраты на питание:</span>
           <span class="weight-loss-example__price-value">15 000 руб.</span>
         </p>
-        <img class="weight-loss-example__photo" src="img/photo-before.png" alt="Борис до питания кормом Кэт энерджи.">
-        <img class="weight-loss-example__photo" src="img/photo-after.png" alt="Борис после питания кормом Кэт энерджи.">
+        <div class="weight-loss-example__photo-wrapper">
+          <picture>
+            <source media="(min-width: 768px)"
+              srcset="img/photo-before-tablet.png 1x, img/photo-before-tablet@2x.png 2x">
+            <img class="weight-loss-example__photo weight-loss-example__photo--before" src="img/photo-before-phone.png"
+              srcset="img/photo-before-phone@2x.jpg 2x" width="280" height="232"
+              alt="Борис до питания кормом Кэт энерджи.">
+          </picture>
+        </div>
+        <div class="weight-loss-example__photo-wrapper">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/photo-after-tablet.png 1x, img/photo-after-tablet@2x.png 2x">
+            <img class="weight-loss-example__photo weight-loss-example__photo--after" src="img/photo-after-phone.png"
+              srcset="img/photo-after-phone@2x.jpg 2x" width="243" height="232"
+              alt="Борис после питания кормом Кэт энерджи.">
+          </picture>
+        </div>
         <div class="weight-loss-example__toggle">
           <button class="weight-loss-example__toggle-button" type="button"
             aria-label="Показать фото Бориса до питания кормом Кэт энерджи.">Было</button>
