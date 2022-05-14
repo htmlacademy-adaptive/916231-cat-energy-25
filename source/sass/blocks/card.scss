@@ -7,6 +7,17 @@
     "image feature"
     "button button";
 
+  &--more {
+    padding-top: 70px;
+    padding-bottom: 25px;
+    grid-template-areas:
+      "title"
+      "text"
+      "button";
+    grid-template-rows: auto auto auto;
+    text-align: center;
+  }
+
   @media (min-width: $tablet-width) {
     text-align: center;
     padding: 30px;
@@ -23,16 +34,12 @@
       border: 2px solid $color-concrete;
       padding-top: 160px;
       background-color: transparent;
+      grid-template-areas:
+        "title"
+        "text"
+        "button";
+      grid-template-rows: auto auto auto;
     }
-  }
-
-  &--more {
-    grid-template-areas:
-      "title"
-      "text"
-      "button";
-    grid-template-rows: auto auto auto;
-    text-align: center;
   }
 }
 
@@ -44,6 +51,62 @@
   @media (min-width: $tablet-width) {
     position: relative;
     bottom: 100px;
+  }
+}
+
+.card__image {
+  @media (min-width: $tablet-width) {
+    &--chicken {
+      width: 161px;
+      height: 172px;
+    }
+
+    &--chicken-big {
+      width: 168px;
+      height: 207px;
+    }
+
+    &--fish {
+      width: 163px;
+      height: 174px;
+    }
+
+    &--fish-big {
+      width: 168px;
+      height: 200px;
+    }
+
+    &--buckwheat {
+      width: 161px;
+      height: 171px;
+    }
+
+    &--buckwheat-big {
+      width: 168px;
+      height: 200px;
+    }
+
+    &--rice {
+      width: 163px;
+      height: 174px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--chicken-big {
+      width: 172px;
+      height: 202px;
+    }
+
+    &--fish-big {
+      width: 172px;
+      height: 196px;
+    }
+
+    &--buckwheat-big {
+      width: 172px;
+      height: 196px;
+    }
   }
 }
 
@@ -67,15 +130,43 @@
 
   &--more {
     grid-area: title;
+    position: relative;
+    text-align: center;
+  }
+
+  &--more::after,
+  &--more::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $color-alto;
+  }
+
+  &--more::before {
+    width: 2px;
+    height: 30px;
+  }
+
+  &--more::after {
+    width: 30px;
+    height: 2px;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
 
-    &--more::before,
+    &--more::before {
+      height: 60px;
+    }
+
     &--more::after {
       width: 60px;
-      left: 60px;
+    }
+
+    &--more::before,
+    &--more::after {
       top: -80px;
     }
   }

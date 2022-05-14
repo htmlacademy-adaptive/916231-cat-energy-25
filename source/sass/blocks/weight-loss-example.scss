@@ -68,14 +68,16 @@
   border: 1px solid $color-silver;
   border-radius: 3px;
   padding: 15px;
-  width: 162px;
-  height: 77px;
+  width: 124px;
+  height: 56px;
   box-sizing: border-box;
   text-align: center;
   position: relative;
 
   @media (min-width: $tablet-width) {
     margin-right: 42px;
+    width: 162px;
+    height: 77px;
   }
 }
 
@@ -147,9 +149,31 @@
   }
 }
 
-.weight-loss-example__photo {
+.weight-loss-example__photo-wrapper {
   grid-area: image;
   justify-self: center;
+}
+
+.weight-loss-example__photo {
+  @media (min-width: $tablet-width) {
+    &--before {
+      width: 296px;
+      height: 511px;
+      object-fit: cover;
+      object-position: left;
+      position: relative;
+      right: 148px;
+    }
+
+    &--after {
+      width: 296px;
+      height: 511px;
+      object-fit: cover;
+      object-position: right;
+      position: relative;
+      left: 148px;
+    }
+  }
 }
 
 .weight-loss-example__toggle {

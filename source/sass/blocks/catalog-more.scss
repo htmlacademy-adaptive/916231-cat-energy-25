@@ -40,6 +40,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: $color-apple;
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
@@ -63,12 +64,21 @@
     top: 59px;
   }
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba($color-apple, 0.85),
+        rgba($color-apple, 0.85)
+      ),
+      url("../img/background-promo@2x.jpg");
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 71px;
     padding-bottom: 69px;
     padding-left: 420px;
     margin-bottom: 76px;
     text-align: left;
+    background-position: center, center top -320px;
 
     &::before {
       left: 77px;
@@ -83,6 +93,7 @@
     padding-left: 40px;
     margin-bottom: 86px;
     text-align: center;
+    background-position: center;
 
     &::before {
       left: auto;
