@@ -1,33 +1,37 @@
 .program {
   background-color: $color-concrete;
-  padding: 20px;
-  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 29px;
+  padding-bottom: 13px;
   position: relative;
 
   &::before {
     content: "";
     position: absolute;
     background-repeat: no-repeat;
-    top: 20px;
   }
 
   &--weight-loss::before {
     background-image: url("../img/cat-slim.svg");
     width: 50px;
     height: 53px;
+    top: 21px;
+    left: 22px;
   }
 
   &--weight-gain::before {
     background-image: url("../img/cat-pro.svg");
     width: 67px;
     height: 50px;
-    left: 12px;
+    top: 24px;
+    left: 13px;
   }
 
   @media (min-width: $tablet-width) {
     padding-top: 77px;
-    padding-right: 324px;
-    padding-bottom: 57px;
+    padding-right: 316px;
+    padding-bottom: 48px;
     padding-left: 52px;
 
     &--weight-loss::before {
@@ -36,6 +40,7 @@
       background-size: 200px 211px;
       top: 80px;
       right: 62px;
+      left: auto;
     }
 
     &--weight-gain::before {
@@ -43,19 +48,20 @@
       height: 200px;
       background-size: 268px 200px;
       top: 91px;
-      right: 28px;
+      right: 29px;
       left: auto;
     }
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 51px;
+    padding-bottom: 50px;
 
     &--weight-loss::before {
       width: 100px;
       height: 106px;
       background-size: 100px 106px;
-      top: 41px;
+      top: 40px;
       left: 52px;
     }
 
@@ -63,7 +69,7 @@
       width: 134px;
       height: 100px;
       background-size: 134px 100px;
-      top: 47px;
+      top: 46px;
       left: 33px;
     }
   }
@@ -76,29 +82,36 @@
   font-size: 24px;
   line-height: 1.5;
   text-transform: uppercase;
-  padding-left: 80px;
+  padding-left: 71px;
   margin-top: 0;
-  margin-bottom: 29px;
+  margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 1;
     padding-left: 0;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 162px;
-    margin-bottom: 73px;
+    margin-bottom: 74px;
   }
 }
 
 .program__description {
-  padding-bottom: 23px;
+  padding-bottom: 21px;
   border-bottom: 1px solid $color-alto;
+  margin-bottom: 5px;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     border-bottom: 0;
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
   }
 }
 
@@ -123,8 +136,14 @@
     background-image: url("../img/arrow.svg");
     background-repeat: no-repeat;
     position: absolute;
-    top: 24px;
+    top: 16px;
     right: 0;
+  }
+
+  &:hover::after {
+    background-image: url("../img/arrow-hover.svg");
+    width: 32px;
+    right: -13px;
   }
 
   &:active {
@@ -134,5 +153,14 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 1.5;
+
+    &::after {
+      top: 23px;
+      right: -13px;
+    }
+
+    &:hover::after {
+      right: -21px;
+    }
   }
 }

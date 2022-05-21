@@ -1,6 +1,6 @@
 .more-card {
-  padding-top: 13px;
-  padding-bottom: 19px;
+  padding-top: 14px;
+  padding-bottom: 17px;
   border-top: 1px solid $color-silver;
 
   &:last-child {
@@ -12,25 +12,30 @@
   gap: 10px;
 
   @media (min-width: $tablet-width) {
-    padding: 20px;
+    padding-top: 22px;
+    padding-right: 37px;
+    padding-bottom: 27px;
+    padding-left: 37px;
     border-left: 1px solid $color-silver;
     border-right: 1px solid $color-silver;
     grid-template-areas:
       "title feature"
       "button button";
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 21px;
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 17px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-top: 15px;
+    padding-right: 1px;
+    padding-bottom: 16px;
+    padding-left: 1px;
     border-left: none;
     border-right: none;
     grid-template-areas: "title feature button";
-    grid-template-columns: 1fr 1fr 300px;
+    grid-template-columns: 1fr 1fr 244px;
+    gap: 32px;
   }
 }
 
@@ -58,11 +63,36 @@
   display: grid;
   grid-auto-flow: column;
   justify-content: space-between;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 3px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 8px;
+    margin-bottom: 0;
+    line-height: 1.25;
+    gap: 44px;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
 }
 
 .more-card__features-value {
   margin: 0;
+  min-width: 50px;
+
+  &--price {
+    text-transform: uppercase;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    &--price {
+      text-align: start;
+    }
+  }
 }
 
 .more-card__shopping-link {

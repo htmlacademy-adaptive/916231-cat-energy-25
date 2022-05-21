@@ -1,3 +1,43 @@
+.control-checkbox {
+  position: relative;
+  display: block;
+  padding-left: 60px;
+}
+
+.control-checkbox__mark {
+  width: 40px;
+  height: 40px;
+  border: 1px solid $color-silver;
+  top: -6px;
+  left: 0;
+  position: absolute;
+}
+
+.control-checkbox:hover .control-checkbox__mark,
+.control-checkbox:focus .control-checkbox__mark {
+  border-color: $color-silver-dark;
+}
+
+.control-checkbox:active .control-checkbox__mark {
+  border-color: $color-alto;
+}
+
+.control-checkbox__input:disabled ~ .control-checkbox__label,
+.control-checkbox__input:disabled + .control-checkbox__mark {
+  opacity: 0.3;
+}
+
+.control-checkbox__input:checked + .control-checkbox__mark::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: $color-apple;
+  border-radius: 50%;
+  top: 11px;
+  left: 11px;
+}
+
 .control-checkbox__label {
   font-family: $font-primary;
   font-weight: 400;

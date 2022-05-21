@@ -8,12 +8,14 @@
 
 .footer__logo {
   display: block;
-  padding-top: 39px;
-  padding-bottom: 32px;
+  padding-top: 38px;
+  padding-bottom: 31px;
   border-bottom: 1px solid $color-alto;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
+    padding-top: 36px;
+    margin-right: 60px;
   }
 }
 
@@ -30,8 +32,8 @@
 }
 
 .footer__social {
-  padding-top: 20px;
-  padding-bottom: 22px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid $color-alto;
 
   @media (min-width: $tablet-width) {
@@ -40,7 +42,7 @@
 }
 
 .footer__copyright {
-  padding-top: 22px;
+  padding-top: 16px;
   padding-bottom: 22px;
   display: flex;
   justify-content: space-between;
@@ -49,5 +51,7 @@
   @media (min-width: $tablet-width) {
     min-width: 164px;
     margin-left: 30px;
+    padding-top: 26px;
+    align-items: flex-end;
   }
 }
