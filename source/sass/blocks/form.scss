@@ -228,6 +228,10 @@
   position: absolute;
   right: 16px;
 
+  &--email {
+    stroke: $color-black;
+  }
+
   &--tel {
     right: 13px;
   }
@@ -244,27 +248,19 @@
 }
 
 .form__input:focus ~ .form__icon--email {
-  path {
-    stroke: $color-apple;
-  }
+  stroke: $color-apple;
 }
 
 .form__input:focus:invalid ~ .form__icon--email {
-  path {
-    stroke: $color-vivid-tangerine;
-  }
+  stroke: $color-vivid-tangerine;
 }
 
 .form__input:focus ~ .form__icon--tel {
-  path {
-    fill: $color-apple;
-  }
+  fill: $color-apple;
 }
 
 .form__input:focus:invalid ~ .form__icon--tel {
-  path {
-    fill: $color-vivid-tangerine;
-  }
+  fill: $color-vivid-tangerine;
 }
 
 .form__control-list {
@@ -272,6 +268,7 @@
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
+  // margin-bottom: 20px;
   display: grid;
   grid-template-columns: 1fr;
   position: relative;
