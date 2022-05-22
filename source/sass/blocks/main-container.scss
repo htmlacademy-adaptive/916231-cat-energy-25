@@ -4,17 +4,17 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 1;
-  margin-top: 27px;
+  margin-top: 28px;
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     margin-top: 65px;
-    margin-bottom: 122px;
+    margin-bottom: 162px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 74px;
-    margin-bottom: 144px;
+    margin-top: 76px;
+    margin-bottom: 165px;
   }
 }

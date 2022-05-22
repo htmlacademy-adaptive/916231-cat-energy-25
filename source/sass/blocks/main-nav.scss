@@ -1,6 +1,10 @@
 .main-nav {
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    align-self: stretch;
+  }
+
   @media (min-width: $desktop-width) {
     max-width: 50%;
   }
@@ -9,7 +13,7 @@
 .main-nav__toggle {
   position: absolute;
   box-sizing: content-box;
-  top: -56px;
+  top: -52px;
   right: -10px;
   display: block;
   width: 24px;

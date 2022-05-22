@@ -17,22 +17,23 @@
     @media (min-width: $tablet-width) {
       position: relative;
       padding-top: 0;
-      padding-bottom: 550px;
+      padding-bottom: 526px;
       padding-left: 88px;
       text-align: left;
-      margin-top: 62px;
+      margin-top: 64px;
     }
 
     @media (min-width: $desktop-width) {
+      padding-top: 47px;
       padding-right: 300px;
       padding-left: 80px;
-      padding-bottom: 350px;
+      padding-bottom: 267px;
     }
   }
 
   &--weight-loss-example {
     padding-top: 25px;
-    padding-bottom: 40px;
+    padding-bottom: 45px;
     display: grid;
     grid-template-areas:
       "title"
@@ -43,6 +44,8 @@
       "toggle";
 
     @media (min-width: $tablet-width) {
+      padding-top: 43px;
+      padding-bottom: 59px;
       grid-template-areas:
         "title title"
         "description description"
@@ -52,7 +55,9 @@
     }
 
     @media (min-width: $desktop-width) {
-      grid-template-columns: 436px 600px;
+      padding-top: 0;
+      padding-bottom: 68px;
+      grid-template-columns: 436px 588px;
       justify-content: space-between;
       grid-template-areas:
         "title image"
@@ -70,6 +75,8 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+      padding-top: 25px;
+      padding-bottom: 25px;
     }
   }
 
@@ -82,10 +89,22 @@
     }
   }
 
+  &--catalog-title {
+    @media (min-width: $tablet-width) {
+      padding-left: 67px;
+      padding-right: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
   &--form {
     @media (min-width: $tablet-width) {
-      padding-left: 44px;
-      padding-right: 44px;
+      padding-left: 40px;
+      padding-right: 37px;
       box-sizing: border-box;
     }
 
@@ -99,11 +118,11 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
-    margin-bottom: 32px;
+    margin-bottom: 31px;
 
     @media (min-width: $tablet-width) {
       grid-template-columns: 1fr 1fr;
-      gap: 60px;
+      gap: 58px;
       align-items: center;
       margin-bottom: 72px;
     }

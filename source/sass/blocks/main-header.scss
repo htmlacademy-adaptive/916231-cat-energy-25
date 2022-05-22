@@ -7,22 +7,28 @@
     justify-content: space-between;
     align-items: flex-start;
     border-bottom: none;
-    padding-top: 30px;
+    padding-top: 24px;
     width: 708px;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1200px;
+    width: 1220px;
+    padding-top: 53px;
   }
 }
 
 .main-header__logo {
   display: inline-block;
   padding-top: 10px;
-  padding-bottom: 18px;
+  padding-bottom: 12px;
 
   @include side-margin;
+
+  &--form {
+    padding-top: 12px;
+    padding-bottom: 11px;
+  }
 
   &:hover {
     opacity: 0.8;
@@ -35,5 +41,17 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     margin: 0;
+  }
+}
+
+.main-header__logo-image {
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
   }
 }
