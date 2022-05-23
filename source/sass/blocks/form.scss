@@ -224,6 +224,17 @@
   }
 }
 
+.form__input--number {
+  /* stylelint-disable-next-line */
+  -moz-appearance: textfield;
+}
+
+.form__input--number::-webkit-outer-spin-button,
+.form__input--number::-webkit-inner-spin-button {
+  /* stylelint-disable-next-line */
+  -webkit-appearance: none;
+}
+
 .form__icon {
   position: absolute;
   right: 16px;
@@ -268,7 +279,6 @@
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
-  // margin-bottom: 20px;
   display: grid;
   grid-template-columns: 1fr;
   position: relative;

@@ -57,22 +57,12 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 34px;
+    padding-right: 6px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 16px;
-  }
-}
-
-.weight-loss-example__description br {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: inline;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: none;
+    padding-right: 0;
   }
 }
 
@@ -257,6 +247,8 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  margin-left: 4px;
+  margin-right: 4px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -273,7 +265,8 @@
   }
 }
 
-.weight-loss-example__label {
+.weight-loss-example__range-toggle-wrapper {
+  display: inline-block;
   margin-left: 8px;
   margin-right: 8px;
 }
