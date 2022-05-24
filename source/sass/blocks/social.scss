@@ -39,3 +39,7 @@
     background-color: rgba($color-apple, 0.3);
   }
 }
+
+.social__item:focus-within {
+  outline: 2px solid $color-black;
+}

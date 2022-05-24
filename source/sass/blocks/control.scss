@@ -33,9 +33,12 @@
   }
 }
 
-.control:hover .control__mark,
-.control:focus .control__mark {
+.control:hover .control__mark {
   border-color: $color-silver-dark;
+}
+
+.control:focus-within .control__mark {
+  outline: 2px solid $color-black;
 }
 
 .control:active .control__mark {

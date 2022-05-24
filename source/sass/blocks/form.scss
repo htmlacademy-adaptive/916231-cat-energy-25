@@ -224,9 +224,24 @@
   }
 }
 
+.form__input--number {
+  /* stylelint-disable-next-line */
+  -moz-appearance: textfield;
+}
+
+.form__input--number::-webkit-outer-spin-button,
+.form__input--number::-webkit-inner-spin-button {
+  /* stylelint-disable-next-line */
+  -webkit-appearance: none;
+}
+
 .form__icon {
   position: absolute;
   right: 16px;
+
+  &--email {
+    stroke: $color-black;
+  }
 
   &--tel {
     right: 13px;
@@ -244,27 +259,19 @@
 }
 
 .form__input:focus ~ .form__icon--email {
-  path {
-    stroke: $color-apple;
-  }
+  stroke: $color-apple;
 }
 
 .form__input:focus:invalid ~ .form__icon--email {
-  path {
-    stroke: $color-vivid-tangerine;
-  }
+  stroke: $color-vivid-tangerine;
 }
 
 .form__input:focus ~ .form__icon--tel {
-  path {
-    fill: $color-apple;
-  }
+  fill: $color-apple;
 }
 
 .form__input:focus:invalid ~ .form__icon--tel {
-  path {
-    fill: $color-vivid-tangerine;
-  }
+  fill: $color-vivid-tangerine;
 }
 
 .form__control-list {
