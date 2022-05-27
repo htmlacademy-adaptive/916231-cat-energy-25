@@ -97,7 +97,8 @@
         <div class="line">
           <div class="wrapper wrapper--form">
             <fieldset class="form__fieldset">
-              <legend class="form__legend line__title">Контактные данные<br> (владельца кота)</legend>
+              <legend class="form__legend form__legend--owner-data line__title">Контактные данные (владельца кота)
+              </legend>
               <ul class="form__input-list form__input-list--owner-data">
                 <li class="form__input-item">
                   <label class="form__label form__label--email" for="email">E-mail:*</label>
@@ -190,6 +191,11 @@
       </div>
       <div class="contacts__map">
         <picture>
+          <source type="image/webp" media="(min-width: 1440px)"
+            srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/map-phone.webp 1x, img/map-phone@2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
           <!-- Класс contacts__image-map--js скрывает изображение карты при включённом JavaScript-->

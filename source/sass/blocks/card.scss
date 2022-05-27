@@ -193,14 +193,17 @@
   }
 
   @media (min-width: $tablet-width) {
-    width: auto;
+    width: 140px;
     font-size: 20px;
     line-height: 1.2;
     margin-bottom: 15px;
 
     &--more {
+      width: 150px;
       margin-top: 0;
       margin-bottom: 26px;
+      margin-right: auto;
+      margin-left: auto;
       line-height: 1.1;
       top: 2px;
     }
@@ -226,12 +229,6 @@
     &--more {
       margin-bottom: 26px;
     }
-  }
-}
-
-.card__title br {
-  @media (max-width: $mobile-width-only) {
-    display: none;
   }
 }
 
@@ -299,15 +296,10 @@
   margin-bottom: 21px;
 
   @media (min-width: $tablet-width) {
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 16px;
     line-height: 1.1;
-  }
-}
-
-.card__text br {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    display: inline;
   }
 }
