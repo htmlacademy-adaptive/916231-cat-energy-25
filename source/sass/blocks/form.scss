@@ -36,17 +36,21 @@
     margin-bottom: 37px;
   }
 
+  &--owner-data {
+    width: 190px;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 76px;
     font-size: 36px;
     line-height: 1;
 
-    br {
-      display: none;
-    }
-
     &--more {
       margin-bottom: 57px;
+    }
+
+    &--owner-data {
+      width: auto;
     }
   }
 
@@ -293,8 +297,8 @@
       height: 1px;
       background-color: $color-alto;
       position: absolute;
-      left: -30px;
-      right: -30px;
+      left: -20px;
+      right: -20px;
     }
 
     &::before {
